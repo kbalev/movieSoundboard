@@ -15,9 +15,9 @@ for (let text of texts) {
         text.textContent = text.textContent.toLowerCase();
     })
     }
-
+//key events
 // trying to shorten the code. Does not seem to be working, check back later.
-// for(i=0; i<soundArray.length; i++){
+// while(i=0; i<soundArray.length; i++){
 //     window.addEventListener("keydown", (event)=>{
 //             if (event.code == keyCodeArray[i]) {
 //                 document.getElementById(soundArray[i]).play();
@@ -25,7 +25,7 @@ for (let text of texts) {
 //     })
 // }
 
-//Key-events
+
 
 window.addEventListener("keydown", (event)=>{
     if (event.code == keyCodeArray[0]) {
