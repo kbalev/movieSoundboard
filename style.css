@@ -1,0 +1,77 @@
+.main {
+    --s: 100px;  /* size of a hexagon */
+    --m: 4px;    /* space between each heaxgon */
+    --r: calc(var(--s)*3*1.1547/2 + 4*var(--m));
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom right, yellow, orange, red);
+
+}
+
+
+.container{
+    background: linear-gradient(to bottom right, yellow, orange, red);
+    height:310px;
+    width: 610px;
+    border: solid;
+    box-shadow: 6px 6px 0 slategray ;
+    
+    
+}
+  .container div {
+    width: var(--s);
+    height: calc(var(--s)*1.1547); 
+    margin: var(--m);
+    display: inline-block;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    margin-bottom: calc(var(--m) - var(--s)*0.2885);
+    background-color: slategray;
+    transition:ease 0.25s;
+    
+    
+  }
+  .container div:hover{
+    background-color: cornsilk;
+    color: black;
+
+}
+
+a{  display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: darkolivegreen;
+    text-decoration: none;
+    
+    
+}
+p{  display:flex;
+    align-items: center;
+    justify-content: center;
+    color: darkolivegreen;
+    
+}
+
+  .container::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 100%;
+    shape-outside: repeating-linear-gradient(     
+                    transparent 0 calc(var(--r) - 3px),      
+                    #fff        0 var(--r));
+  }
+  *{
+      padding:0;
+      margin:0;
+  }
+
+
+
+  /* @media all and (max-width:600px) {
+      *{scale: 95%;}
+  } */
