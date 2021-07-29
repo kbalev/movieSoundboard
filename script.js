@@ -4,17 +4,17 @@ let keyCodeArray = [`KeyQ`,`KeyW`,`KeyE`,`KeyR`,`KeyT`,`KeyA`,`KeyS`,`KeyD`,`Key
 const texts = document.getElementsByTagName("p");
 const hexagons = document.getElementsByClassName("hexagon")
 
-for (let text of texts) {
-    text.addEventListener("mouseover", (event)=>{
-        let text = event.target;
-        text.textContent = text.textContent.toUpperCase();
-    })
+// for (let text of texts) {
+//     text.addEventListener("mouseover", (event)=>{
+//         let text = event.target;
+//         text.textContent = text.textContent.toUpperCase();
+//     })
     
-    text.addEventListener("mouseout", (event)=>{
-        let text = event.target;
-        text.textContent = text.textContent.toLowerCase();
-    })
-    }
+//     text.addEventListener("mouseout", (event)=>{
+//         let text = event.target;
+//         text.textContent = text.textContent.toLowerCase();
+//     })
+//     }
 
 for(let i=0; i<soundArray.length; i++){
     window.addEventListener("keydown", (event)=>{

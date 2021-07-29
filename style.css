@@ -15,8 +15,8 @@
 
 .container{
     background: linear-gradient(to bottom right, yellow, orange, red);
-    height:310px;
-    width: 610px;
+    height: 365px;
+    width: 625px;
     border: solid;
     box-shadow: 6px 6px 0 slategray ;
     
@@ -40,19 +40,19 @@
 
 }
 
-a{  display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    color: darkolivegreen;
+a{  color: rgb(168, 180, 147);
     text-decoration: none;
     
     
 }
-p{  display:flex;
-    align-items: center;
-    justify-content: center;
-    color: darkolivegreen;
+p{  
+    /* display:flex; */
+    color: black;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+    padding: 34px 0 0 0;
     
 }
 
